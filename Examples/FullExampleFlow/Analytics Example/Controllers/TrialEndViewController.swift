@@ -17,7 +17,7 @@ class TrialEndViewController: StepsViewController {
         descriptionString = "Login with details using identify"
         codeString = """
 // Start with the analytics singleton
-let analytics = Analytics.shared()
+let analytics = AicactusSDK.shared()
 
 // identify screen load
 analytics.screen("Dashboard")

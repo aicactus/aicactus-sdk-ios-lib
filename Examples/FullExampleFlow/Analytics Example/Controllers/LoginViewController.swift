@@ -14,9 +14,9 @@ class LoginViewController: StepsViewController {
         descriptionString = "Login with details using identify"
         codeString = """
 // Start by identifying the user
-if let analytics = Analytics.shared()
-Analytics.shared().identify("1234",
-                            traits: ["email": "jack@segment.com",
+if let analytics = AicactusSDK.shared()
+AicactusSDK.shared().identify("1234",
+                            traits: ["email": "jack@aicactus.ai",
                                      "phone": "555-444-3333"])
 """
     }
