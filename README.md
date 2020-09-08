@@ -7,7 +7,7 @@ Analytics helps you measure your users, product, and business. It unlocks insigh
 
 ## Installation
 
-Analytics is available through [CocoaPods](http://cocoapods.org)
+AicactusSDK is available through [CocoaPods](http://cocoapods.org)
 
 ### CocoaPods
 
