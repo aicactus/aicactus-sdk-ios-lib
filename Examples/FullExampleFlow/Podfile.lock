@@ -1,16 +1,20 @@
 PODS:
-  - AicactusSDK (1.0.0)
+  - AicactusSDK (1.0.1)
+  - Analytics (3.9.0)
 
 DEPENDENCIES:
-  - AicactusSDK
+  - AicactusSDK (= 1.0.1)
+  - Analytics (~> 3.0)
 
 SPEC REPOS:
   trunk:
     - AicactusSDK
+    - Analytics
 
 SPEC CHECKSUMS:
-  AicactusSDK: 4915995f9883bf7a69db940f4413d9fbb27d0697
+  AicactusSDK: 331ab26da398da41bba5fb812509929305e36b2e
+  Analytics: 67cce2129e4b0df5b532bf0c043043f292b32f5f
 
-PODFILE CHECKSUM: 6aa17b71a15e61d2d15605424668e5fe1c49754d
+PODFILE CHECKSUM: 6188de74c5791b9a382408a8114d77bc82aa5b7f
 
 COCOAPODS: 1.10.0.beta.2

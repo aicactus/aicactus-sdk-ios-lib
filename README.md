@@ -12,7 +12,7 @@ AicactusSDK is available through [CocoaPods](http://cocoapods.org)
 ### CocoaPods
 
 ```ruby
-    pod "AicactusSDK"
+    pod 'AicactusSDK', '1.0.1'
 ```
 
 ## Quickstart
@@ -117,12 +117,15 @@ So for wrapping out x86_64, i386 architecture from framework on host app (App in
 Under “Build Phases” select “Add Run Script” and copy the contents of below script
 
 ```bash
-    APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+    # Type a script or drag a script file from your workspace to insert its path.
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
 
-    # This script loops through the frameworks embedded in the application and
-    # removes unused architectures.
-    find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
-    do
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    if ( $FRAMEWORK == "AicactusSDK" )
+    then
         FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
         FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
         echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
@@ -143,6 +146,7 @@ Under “Build Phases” select “Add Run Script” and copy the contents of be
         echo "Replacing original executable with thinned version"
         rm "$FRAMEWORK_EXECUTABLE_PATH"
         mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+    fi
+done
 
-    done
 ```

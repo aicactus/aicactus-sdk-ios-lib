@@ -1,5 +1,6 @@
 import UIKit
 import AicactusSDK
+import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configuration.recordScreenViews = true
         AicactusSDK.setup(with: configuration)
         
+        
+        // Segment
+        let configurationSegment = SEGAnalyticsConfiguration(writeKey: "SJLVKRwNpDQPBLdiyz2ecSTyq8nCyD0z")
+        configurationSegment.trackApplicationLifecycleEvents = true
+        configurationSegment.recordScreenViews = true
+        SEGSetShowDebugLogs(true);
+        SEGAnalytics.setup(with: configurationSegment)
+
         return true
     }
 
