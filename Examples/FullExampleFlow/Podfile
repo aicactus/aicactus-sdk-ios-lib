@@ -6,7 +6,7 @@ use_frameworks!
 target 'Analytics Example' do
   #  Add path to Analytics project
   pod 'Analytics', '~> 3.0'
-  pod 'AicactusSDK', '1.0.1'
+  pod 'AicactusSDK', '1.0.2'
 end
 
 
