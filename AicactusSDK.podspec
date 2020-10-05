@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source           = { :http => 'https://github.com/aicactus/aicactus-sdk-ios-lib/raw/master/AicactusSDK/1.0.3/AicactusSDK.zip'}
   s.social_media_url = 'https://twitter.com/aicactus'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.ios.frameworks = 'CoreTelephony'
   s.frameworks = 'Security', 'StoreKit', 'SystemConfiguration', 'UIKit'
