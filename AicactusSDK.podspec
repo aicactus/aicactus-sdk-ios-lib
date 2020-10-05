@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AicactusSDK"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "The hassle-free way to add analytics to your iOS app with Aicactus"
 
   s.description      = <<-DESC
