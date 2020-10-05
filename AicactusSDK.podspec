@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license          =  { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.author           = { "aicactus" => "phuong@tvpsoft.com" }
   s.platform         = :ios
-  s.source           = { :http => 'https://github.com/aicactus/aicactus-sdk-ios-lib/raw/master/AicactusSDK/1.0.2/AicactusSDK.zip'}
+  s.source           = { :http => 'https://github.com/aicactus/aicactus-sdk-ios-lib/raw/master/AicactusSDK/1.0.3/AicactusSDK.zip'}
   s.social_media_url = 'https://twitter.com/aicactus'
 
   s.ios.deployment_target = '8.0'
