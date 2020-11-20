@@ -12,7 +12,7 @@ AicactusSDK is available through [CocoaPods](http://cocoapods.org)
 ### CocoaPods
 
 ```ruby
-    pod 'AicactusSDK', '1.0.1'
+    pod 'AicactusSDK', '1.0.3'
 ```
 
 ## Quickstart
