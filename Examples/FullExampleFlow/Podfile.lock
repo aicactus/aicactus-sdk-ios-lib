@@ -1,20 +1,20 @@
 PODS:
-  - AicactusSDK (1.0.3)
-  - PopupWindow (0.1.0)
+  - AicactusSDK (1.0.4)
+  - Analytics (4.1.2)
 
 DEPENDENCIES:
-  - AicactusSDK
-  - PopupWindow
+  - AicactusSDK (= 1.0.4)
+  - Analytics
 
 SPEC REPOS:
   trunk:
     - AicactusSDK
-    - PopupWindow
+    - Analytics
 
 SPEC CHECKSUMS:
-  AicactusSDK: 5a765d800fbee4dc13efff192aad94d5b42d4b6a
-  PopupWindow: 2f3a33001295435a3ab568e42a970d51539ed6e9
+  AicactusSDK: b7b5931d2099e12d68a4c64fad7c2946f30f77a1
+  Analytics: 177da2c597aba83a6882b706ca6e0a071fd7cd26
 
-PODFILE CHECKSUM: cfff1ee70834455aca88ccf58bf7150011716f5d
+PODFILE CHECKSUM: a51e4103ca375a0193c7b3e13c78b1dbcc7f8e63
 
 COCOAPODS: 1.10.1

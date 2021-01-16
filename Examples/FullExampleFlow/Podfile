@@ -6,7 +6,7 @@ use_frameworks!
 target 'Analytics Example' do
   #  Add path to Analytics project
   pod 'AicactusSDK', '1.0.4'
-  pod 'PopupWindow'
+  pod 'Analytics'
 end
 
 

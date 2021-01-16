@@ -4,7 +4,6 @@
 
 import UIKit
 import AicactusSDK
-import PopupWindow
 
 class AnonymousViewController: StepsViewController {
     
@@ -15,22 +14,22 @@ class AnonymousViewController: StepsViewController {
     enum Const {
             static let popupDuration: TimeInterval = 0.3
             static let transformDuration: TimeInterval = 0.4
-            static let topPopupOption = PopupOption(shapeType: .rounded(cornerSize: 8), viewType: .card, direction: .top, margin: 8)
-            static let bottomPopupOption = PopupOption(shapeType: .rounded(cornerSize: 8), viewType: .card, direction: .bottom, margin: 8)
+//            static let topPopupOption = PopupOption(shapeType: .rounded(cornerSize: 8), viewType: .card, direction: .top, margin: 8)
+//            static let bottomPopupOption = PopupOption(shapeType: .rounded(cornerSize: 8), viewType: .card, direction: .bottom, margin: 8)
         }
     
-    private var popupItem: PopupItem?
-
-        private let topPopupItem = PopupItem(view: DemoPopupView.view(), height: DemoPopupView.Const.height, maxWidth: 500,  popupOption: Const.topPopupOption)
-        private let bottomPopupItem = PopupItem(view: DemoPopupView.view(), height: DemoPopupView.Const.height, maxWidth: 500, popupOption: Const.bottomPopupOption)
+//    private var popupItem: PopupItem?
+//
+//        private let topPopupItem = PopupItem(view: DemoPopupView.view(), height: DemoPopupView.Const.height, maxWidth: 500,  popupOption: Const.topPopupOption)
+//        private let bottomPopupItem = PopupItem(view: DemoPopupView.view(), height: DemoPopupView.Const.height, maxWidth: 500, popupOption: Const.bottomPopupOption)
 
       
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        popupItem = bottomPopupItem
-        configurePopupItem(popupItem!)
+//        popupItem = bottomPopupItem
+//        configurePopupItem(popupItem!)
 
         descriptionString = "Login with details using identify"
         codeString = """
@@ -49,19 +48,19 @@ analytics.track("CTA Tapped", properties: ["plan": "premium"])
         
         // Add the button
         let trackButton = UIButton.SegmentButton("Track", target: self, action: #selector(trackUser(_:)))
-        continueButton = UIButton.SegmentButton("Continue", target: self, action: #selector(continueToNext(_:)))
-        continueButton.isEnabled = false
+//        continueButton = UIButton.SegmentButton("Continue", target: self, action: #selector(continueToNext(_:)))
+//        continueButton.isEnabled = false
     
-        propertyViews = [trackButton, UIView.separator(), continueButton, UIView.separator()]
+//        propertyViews = [trackButton, UIView.separator(), continueButton, UIView.separator()]
         
         // Fire off the beginning analytics
         startAicactusSDK()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        continueButton.isEnabled = false
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        continueButton.isEnabled = false
+//    }
     
     private func startAicactusSDK() {
         let analytics = AicactusSDK.shared()
@@ -82,8 +81,8 @@ analytics.track("CTA Tapped", properties: ["plan": "premium"])
         continueButton.isEnabled = true
     }
     
-    @objc private func continueToNext(_ sender: Any) {
-        let signup = SignupViewController(nibName: nil, bundle: nil)
-        navigationController?.pushViewController(signup, animated: true)
-    }
+//    @objc private func continueToNext(_ sender: Any) {
+//        let signup = SignupViewController(nibName: nil, bundle: nil)
+//        navigationController?.pushViewController(signup, animated: true)
+//    }
 }
