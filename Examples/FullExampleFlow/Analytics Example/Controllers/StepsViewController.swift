@@ -4,7 +4,7 @@
 
 import UIKit
 
-class StepsViewController: UIViewController {
+class StepsViewController: BasePopupViewController {
     
     var codeString: String? {
         didSet {

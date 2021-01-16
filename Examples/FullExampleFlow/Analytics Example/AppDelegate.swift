@@ -1,6 +1,6 @@
 import UIKit
 import AicactusSDK
-import Analytics
+// import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,20 +9,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // ContainerID AiCactus
-        let configuration = AnalyticsConfiguration(writeKey: "d152290b-ba08-4a15-a66e-fce748116a0f")
+        let configuration = AiCactusConfig(writeKey: "d152290b-ba08-4a15-a66e-fce748116a0f")
         // Enable this to record certain application events automatically!
         configuration.trackApplicationLifecycleEvents = true
         // Enable this to record screen views automatically!
         configuration.recordScreenViews = true
+        AicactusShowDebugLogs(true);
         AicactusSDK.setup(with: configuration)
         
-        
         // Segment
-        let configurationSegment = SEGAnalyticsConfiguration(writeKey: "SJLVKRwNpDQPBLdiyz2ecSTyq8nCyD0z")
-        configurationSegment.trackApplicationLifecycleEvents = true
-        configurationSegment.recordScreenViews = true
-        SEGSetShowDebugLogs(true);
-        SEGAnalytics.setup(with: configurationSegment)
+        // let configurationSegment = AnalyticsConfiguration(writeKey: "SJLVKRwNpDQPBLdiyz2ecSTyq8nCyD0z")
+        // configurationSegment.trackApplicationLifecycleEvents = true
+        // configurationSegment.recordScreenViews = true
+        // SEGSetShowDebugLogs(true);
+        // Analytics.setup(with: configurationSegment)
 
         return true
     }
