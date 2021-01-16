@@ -12,7 +12,7 @@ AicactusSDK is available through [CocoaPods](http://cocoapods.org)
 ### CocoaPods
 
 ```ruby
-    pod 'AicactusSDK', '1.0.3'
+    pod 'AicactusSDK', '1.0.4'
 ```
 
 ## Quickstart
@@ -21,7 +21,7 @@ In your application delegate’s `application:didFinishLaunchingWithOptions:` me
 
 ```swift
     // ContainerID AiCactus
-    let configuration = AnalyticsConfiguration(writeKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
+    let configuration = AiCactusConfig(writeKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
     // Enable this to record certain application events automatically!
     configuration.trackApplicationLifecycleEvents = true
     // Enable this to record screen views automatically!
