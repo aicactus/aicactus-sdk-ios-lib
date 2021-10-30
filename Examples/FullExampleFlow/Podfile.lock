@@ -1,9 +1,9 @@
 PODS:
-  - AicactusSDK (1.0.4)
+  - AicactusSDK (1.0.5)
   - Analytics (4.1.2)
 
 DEPENDENCIES:
-  - AicactusSDK (= 1.0.4)
+  - AicactusSDK (= 1.0.5)
   - Analytics
 
 SPEC REPOS:
